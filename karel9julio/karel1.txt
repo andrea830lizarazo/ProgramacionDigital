@@ -1,0 +1,38 @@
+iniciar-programa
+	define-nueva-instruccion gira-derecha como inicio
+    	repetir 3 veces inicio
+        	gira-izquierda;
+        fin;
+    fin;
+    
+    define-nueva-instruccion infinito como inicio
+    	mientras derecha-bloqueada hacer inicio
+        	si frente-libre entonces inicio
+            avanza;
+            fin
+            	sino
+                	si izquierda-libre entonces inicio
+                    gira-izquierda;
+                    fin;
+                fin;    
+        fin;
+        
+        
+        
+         
+    inicia-ejecucion
+		avanza;
+    mientras frente-libre o derecha-libre hacer inicio
+        infinito;
+        si derecha-libre entonces inicio
+            gira-derecha;
+            avanza;
+            gira-derecha;
+            avanza;
+            gira-izquierda;
+        fin;
+    fin;
+    deja-zumbador;
+    apagate;
+    termina-ejecucion
+finalizar-programa
