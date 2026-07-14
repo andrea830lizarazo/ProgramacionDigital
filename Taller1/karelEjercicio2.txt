@@ -1,0 +1,28 @@
+iniciar-programa
+	define-nueva-instruccion llenar-espacio como inicio
+    	deja-zumbador;
+    		mientras frente-libre hacer inicio
+        	avanza;
+        	deja-zumbador;
+    		fin;
+    
+   	 	gira-izquierda;
+    	gira-izquierda;
+    
+    	mientras frente-libre hacer inicio
+        avanza;
+    	fin;
+    	gira-izquierda;
+		fin;
+
+inicia-ejecucion
+    llenar-espacio;
+    
+    	mientras frente-libre hacer inicio
+        	avanza;
+        	gira-izquierda;
+        	llenar-espacio;
+    	fin;
+    apagate;
+    termina-ejecucion
+finalizar-programa
