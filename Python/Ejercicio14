@@ -1,0 +1,19 @@
+def es_par(numero):
+    return numero % 2 == 0
+
+n = int(input("Ingrese n: "))
+
+if es_par(n):
+   numero_actual = n+2
+else:
+    numero_actual = n+1
+suma=0
+
+for i in range(n):  
+    suma += numero_actual
+    numero_actual += 2
+    
+print("La suma es: ", suma)
+    
+       
+       

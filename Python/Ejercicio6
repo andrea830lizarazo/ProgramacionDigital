@@ -1,0 +1,24 @@
+def es_divisible(numero_ingresado, divisor):
+    if numero_ingresado % divisor == 0:
+        es_divisible = True
+    else:
+        es_divisible = False
+    return es_divisible
+
+def ejecutar():
+    divisor = 2
+    numero_ingresado = int(input("Ingrese un numero:"))
+
+    while numero_ingresado !=1:
+        divisible = es_divisible(numero_ingresado, divisor)
+        if divisible:
+            print(divisor)
+            numero_ingresado = numero_ingresado // divisor
+        else:
+            divisor += 1
+        
+    print("Fin de la descomposición en factores primos")
+    
+ejecutar()
+    
+            
