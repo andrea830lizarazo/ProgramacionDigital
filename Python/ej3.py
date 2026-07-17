@@ -1,0 +1,21 @@
+def es_primo(numero_ingresado):
+    divisor = 2
+    es_primo = True
+    
+    if numero_ingresado ==1:
+        es_primo = False
+    while divisor < numero_ingresado:
+        if numero_ingresado % divisor == 0:
+            es_primo = False
+        divisor += 1
+    return es_primo
+
+def ejecutar():
+    numero_ingresado = int(input("Ingrese un número: "))
+    if es_primo(numero_ingresado):
+        print("El número ingresado es primo")
+    else:
+        print("El número ingresado NO es primo")
+
+ejecutar()      
+        

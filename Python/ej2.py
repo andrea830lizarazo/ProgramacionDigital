@@ -1,0 +1,19 @@
+def contar(conteo_impares):
+    resultado = conteo_impares+1
+    return resultado
+conteo_impares = 0
+
+numero_ingresado = int(input("Ingrese un número: "))
+valor_anterior = numero_ingresado
+
+if numero_ingresado % 2 == 1:
+    conteo_impares = contar(conteo_impares)
+numero_ingresado = int(input("Ingrese un nuevo número: "))
+
+while numero_ingresado >= valor_anterior:
+    if numero_ingresado % 2 == 1:
+        conteo_impares = contar(conteo_impares)
+    valor_anterior = numero_ingresado
+    numero_ingresado = int(input("Ingrese un nuevo número: "))
+
+print("La cantidad de numeros impares fue: ", conteo_impares)
