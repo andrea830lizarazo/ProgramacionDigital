@@ -7,7 +7,7 @@ public class MotorAvion{
 		this.potencia=potencia;
 	}
 	
-	public void revolucionar(){
+	public void acelerar(){
 		System.out.println("El motor esta revolucionado");
 	}
 	public void ralentizar(){
