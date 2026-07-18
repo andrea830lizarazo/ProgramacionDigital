@@ -1,9 +1,11 @@
-import java.util.Scanner;
 public class HolaViaje{
 	
 	public static void main(String args[]){
-	Scanner entrada = new Scanner(System.in);
-	
-	}
+	Avion vuelo = new Avion("Aeromexico", 2246);
 
+		vuelo.abordar();
+		vuelo.despegar();
+		vuelo.aterrizar();
+		vuelo.mostrarPotenciaMotor();
+	}
 }
