@@ -1,6 +1,6 @@
 public class Avion{
 	// atributos
-	String areolinea;
+	String aerolinea;
 	int numero_vuelo;
 	MotorAvion motor;
 	Pasajeros pasajero1;
@@ -11,8 +11,8 @@ public class Avion{
 		this.aerolinea=aerolinea;
 		this.numero_vuelo=numero_vuelo;
 		motor=new MotorAvion(5000,120);
-		pasajero1=new Pasajero(12345,"Juanita Perez","Negra");
-		pasajero2=new Pasajero("67890","lorenzo Lopez","Azul");
+		pasajero1=new Pasajeros(12345,"Juanita Perez","Negra");
+		pasajero2=new Pasajeros(67890,"lorenzo Lopez","Azul");
 		
 	}
 
@@ -23,12 +23,12 @@ public class Avion{
 	}
 	
 	public void despegar(){
-		System.out.println("El avion esta despegando");
+		System.out.println("El avion de " +aerolinea+ " esta despegando");
 		motor.acelerar();
 	}
 	
 	public void aterrizar(){
-		System.out.println("El avion esta aterrizando");
+		System.out.println("El avion de " +aerolinea+ " esta aterrizando");
 		motor.ralentizar();
 		pasajero1.recoger_maleta();
 		pasajero2.recoger_maleta();
@@ -46,7 +46,5 @@ public class Avion{
 		int exponente = 5;
 		long resultado = calcularPotencia(motor.potencia, exponente);
 		System.out.println("La potencia del motor elevada a la 5 (" + motor.potencia + "^" + exponente + ") es: " + resultado);
-	}
-
-    
+	}   
 }
